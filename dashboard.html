@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CRM</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <button id="logout">Cerrar sesión</button>
+
+    <h2>Agregar Cliente</h2>
+    <form id="client-form">
+        <input type="text" id="client-name" placeholder="Nombre del cliente" required>
+        <input type="email" id="client-email" placeholder="Correo electrónico" required>
+        <input type="tel" id="client-phone" placeholder="Teléfono" required>
+        <textarea id="client-notes" placeholder="Notas"></textarea>
+        <button type="submit">Agregar Cliente</button>
+    </form>
+
+    <h2>Lista de Clientes</h2>
+    <ul id="client-list"></ul>
+
+    <script defer src="/assets/app.js"></script>
+</body>
+</html>
